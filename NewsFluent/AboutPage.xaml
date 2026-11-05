@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewsFluent.AboutPage"
+             Title="Про NewsFluent"
+             BackgroundColor="#f2f2f2">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <Image 
+                Source="fcit.jpg" 
+                HorizontalOptions="Center" 
+                WidthRequest="300"
+                HeightRequest="300"
+                SemanticProperties.Description="Логотип ФКІТ" />
+
+            <Frame BackgroundColor="White"
+                   CornerRadius="20"
+                   HasShadow="True"
+                   Padding="15">
+                <Label 
+                    Text="Мобільний новинний застосунок."
+                    FontSize="16"
+                    TextColor="Black"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center" />
+            </Frame>
+
+            <Label 
+                Text="Дякуємо, що користуєтесь NewsFluent!" 
+                FontSize="18" 
+                TextColor="#007aff"
+                HorizontalOptions="Center"
+                FontAttributes="Italic" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

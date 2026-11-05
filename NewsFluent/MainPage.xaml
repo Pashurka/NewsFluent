@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewsFluent.MainPage"
+             Title="NewsFluent">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label Text="Останні новини на 14 квітня 2025 р."
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <!-- Повторювані фрейми -->
+            <Frame BorderColor="#cccccc" CornerRadius="10" Padding="10">
+                <VerticalStackLayout>
+                    <Label Text="🌍Війни та зміна клімату: новий звіт про глобальні ризики на 2025 рік"
+                           FontSize="16" />
+                    <Label Text="14 квітня 2025" FontSize="12" TextColor="Gray" />
+                    <Image Source="forum.jpg" HeightRequest="50" HorizontalOptions="Start"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BorderColor="#cccccc" CornerRadius="10" Padding="10">
+                <VerticalStackLayout>
+                    <Label Text="📱 Galaxy AI | Смартфони, пристрої та функції зі штучним інтелектом."
+                           FontSize="16" />
+                    <Label Text="14 квітня 2025" FontSize="12" TextColor="Gray" />
+                    <Image Source="smartphone.jpg" HeightRequest="50" HorizontalOptions="Start"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BorderColor="#cccccc" CornerRadius="10" Padding="10">
+                <VerticalStackLayout>
+                    <Label Text="⚽ Збірна України з хокею перемогла у товариському матчі проти Польщі."
+                           FontSize="16" />
+                    <Label Text="9 квітня 2025" FontSize="12" TextColor="Gray" />
+                    <Image Source="hockey.jpg" HeightRequest="50" HorizontalOptions="Start"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BorderColor="#cccccc" CornerRadius="10" Padding="10">
+                <VerticalStackLayout>
+                    <Label Text="💼 Реальний ВВП України у 2024 році зріс на 2,9%."
+                           FontSize="16" />
+                    <Label Text="01 квітня 2025" FontSize="12" TextColor="Gray" />
+                    <Image Source="vvp.jpg" HeightRequest="50" HorizontalOptions="Start"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BorderColor="#cccccc" CornerRadius="10" Padding="10">
+                <VerticalStackLayout>
+                    <Label Text="🚗 У Києві запустять рух наземного громадського транспорту під час тривог."
+                           FontSize="16" />
+                    <Label Text="18 березня 2025" FontSize="12" TextColor="Gray" />
+                    <Image Source="transport.jpg" HeightRequest="50" HorizontalOptions="Start"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BorderColor="#cccccc" CornerRadius="10" Padding="10">
+                <VerticalStackLayout>
+                    <Label Text=" Учені знайшли спосіб переключити імунітет на боротьбу з раком."
+                           FontSize="16" />
+                    <Label Text="10 квітня 2025" FontSize="12" TextColor="Gray" />
+                    <Image Source="gen.jpg" HeightRequest="50" HorizontalOptions="Start"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BorderColor="#cccccc" CornerRadius="10" Padding="10">
+                <VerticalStackLayout>
+                    <Label Text="🎬 Стартував 13-й фестиваль актуальних стрічок з Австрії."
+                           FontSize="16" />
+                    <Label Text="12 квітня 2025" FontSize="12" TextColor="Gray" />
+                    <Image Source="festival.jpg" HeightRequest="50" HorizontalOptions="Start"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BorderColor="#cccccc" CornerRadius="10" Padding="10">
+                <VerticalStackLayout>
+                    <Label Text="🚀 SpaceX успішно вивела на орбіту чергову партію супутників Starlink."
+                           FontSize="16" />
+                    <Label Text="10 квітня 2025" FontSize="12" TextColor="Gray" />
+                    <Image Source="starlink.jpg" HeightRequest="50" HorizontalOptions="Start"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BorderColor="#cccccc" CornerRadius="10" Padding="10">
+                <VerticalStackLayout>
+                    <Label Text="🏛️ Верховна Рада продовжить воєнний стан та мобілізацію до 6 серпня."
+                           FontSize="16" />
+                    <Label Text="12 квітня 2025" FontSize="12" TextColor="Gray" />
+                    <Image Source="rada.jpg" HeightRequest="50" HorizontalOptions="Start"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BorderColor="#cccccc" CornerRadius="10" Padding="10">
+                <VerticalStackLayout>
+                    <Label Text="🛍️ Яку суму можна переказати на картку без сплати податків."
+                           FontSize="16" />
+                    <Label Text="12 квітня 2025" FontSize="12" TextColor="Gray" />
+                    <Image Source="money.jpg" HeightRequest="50" HorizontalOptions="Start"/>
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

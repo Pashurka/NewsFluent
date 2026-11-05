@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewsFluent.LoginPage"
+             Title="Авторизація">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+            <Image
+                Source="logo.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Logo NewsFluent" />
+
+            <Label Text="Be Fluent in News — будь флюент у подіях світу!"
+                   FontSize="24"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Увійдіть до системи"
+                   FontSize="24"
+                   HorizontalOptions="Center" />
+
+            <Entry x:Name="loginEntry"
+                   Text="pashurka1975@gmail.com"
+                   Placeholder="Логін або електронна пошта"
+                   Keyboard="Email"
+                   ClearButtonVisibility="WhileEditing" />
+
+            <Entry x:Name="passwordEntry"
+                   Text="11111111"
+                   Placeholder="Пароль"
+                   IsPassword="True"
+                   ClearButtonVisibility="WhileEditing" />
+
+            <Button Text="Увійти"
+                    Clicked="OnLoginClicked"
+                    BackgroundColor="#007AFF"
+                    TextColor="White"
+                    CornerRadius="10" />
+
+            <Label x:Name="messageLabel"
+                   TextColor="Red"
+                   FontSize="14"
+                   IsVisible="False"
+                   HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

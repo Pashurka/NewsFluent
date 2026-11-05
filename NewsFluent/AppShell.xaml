@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="NewsFluent.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:NewsFluent"
+    Shell.FlyoutBehavior="Flyout"
+    Title="NewsFluent">
+
+    <FlyoutItem Title="Авторизація" Icon="icon_login.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:LoginPage}"
+            Route="LoginPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Про застосунок" Icon="icon_about.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:AboutPage}"
+            Route="AboutPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Головна сторінка" Icon="icon_main.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Коментарі" Icon="icon_comment.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:CommentsPage}"
+            Route="CommentsPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Підписки" Icon="icon_subscription.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:SubscriptionsPage}"
+            Route="SubscriptionsPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Улюблені новини" Icon="icon_favorites.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:FavoritesPage}"
+            Route="FavoritesPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Профіль користувача" Icon="icon_personal.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:UserManagementPage}"
+            Route="UserManagementPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Поділитися" Icon="icon_share.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:NewsViewPage}"
+            Route="NewsViewPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Налаштування застосунку" Icon="icon_settings.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:SettingsPage}"
+            Route="SettingsPage" />
+    </FlyoutItem>
+
+</Shell>

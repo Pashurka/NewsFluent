@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewsFluent.NewsViewPage"
+             Title="Перегляд новини">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Стилі для елементів -->
+            <Style x:Key="TitleLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="24" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+            <Style x:Key="InfoLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="TextColor" Value="#777" />
+            </Style>
+            <Style x:Key="CommentLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="14" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10">
+            <!-- Назва новини -->
+            <Label Text="ІТ-стартапи в Україні" Style="{StaticResource TitleLabelStyle}" />
+
+            <!-- Зображення новини -->
+            <Image Source="https://shotam.info/wp-content/uploads/2024/03/Diia-biznes.jpg" 
+                   Aspect="AspectFill"
+                   HeightRequest="200"
+                   WidthRequest="300"
+                   HorizontalOptions="Center" />
+
+            <!-- Опис новини -->
+            <Label Text="У межах Європейської інноваційної ради за фінансової підтримки ЄС проєкт Seeds of Bravery запускає п’ять нових грантових програм для українських технологічних стартапів та МСП, які пропонують інноваційні рішення, послуги або продукти. Участь у програмі можуть взяти прогресивні технологічні МСП (включаючи стартапи та масштабні компанії), які працюють над інноваційними рішеннями, послугами чи продуктами. Дедлайн подання заявок — 25 квітня 2025 року." 
+                   FontSize="14"
+                   TextColor="#444"
+                   Margin="0,10" />
+
+            <!-- Автор, видавець, дата та посилання -->
+            <Label Text="Автор: Марина Конопльова" Style="{StaticResource InfoLabelStyle}" HorizontalOptions="Start" />
+            <Label Text="Видавець: #ШоТам" Style="{StaticResource InfoLabelStyle}" HorizontalOptions="Start" />
+            <Label Text="Опубліковано: 2025-04-14 10:12" Style="{StaticResource InfoLabelStyle}" HorizontalOptions="Start" />
+            <Label Text="Посилання: https://shotam.info/v-ukraini-dlia-tekhnolohichnykh-startapiv-zapustyly-5-hrantovykh-prohram/" Style="{StaticResource InfoLabelStyle}" HorizontalOptions="Start" />
+
+
+            <!-- Секція коментарів -->
+            <Label Text="Коментарі:"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   Margin="0,10"
+                   TextColor="#222" />
+
+            <!-- Колекція коментарів -->
+            <CollectionView>
+                <CollectionView.ItemsSource>
+                    <!-- Статичні коментарі -->
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>yulia_test | 2025-04-14 10:32</x:String>
+                        <x:String>Чудова ініціатива! Сподіваюся, це допоможе молодим розробникам.</x:String>
+                        <x:String>news_fan01 | 2025-04-14 11:12</x:String>
+                        <x:String>Небачу сенсу у таких заходах під час війни.</x:String>
+                        <x:String>sportfan45 | 2025-04-13 17:45</x:String>
+                        <x:String>Зареєструвалась! Виглядає дуже цікаво.</x:String>
+                        <x:String>denys_dev | 2025-04-13 12:00</x:String>
+                        <x:String>Обов'язково приму часть! Виглядає футуристично.</x:String>
+                    </x:Array>
+                </CollectionView.ItemsSource>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="10"
+                               Margin="0,5"
+                               BackgroundColor="White"
+                               CornerRadius="10">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding}" FontSize="14" TextColor="#444" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

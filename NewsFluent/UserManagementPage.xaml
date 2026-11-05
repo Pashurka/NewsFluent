@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewsFluent.UserManagementPage"
+             Title="Керування обліковими записами"
+             BackgroundColor="#f9f9f9">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Заголовок -->
+            <Label 
+                Text="Обліковий запис користувача"
+                FontSize="24"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                TextColor="#333" />
+
+            <!-- Інформація про користувача -->
+            <Frame CornerRadius="15" Padding="15" BackgroundColor="White" HasShadow="True">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Логін: DesperaDOS" FontSize="18" TextColor="#222" />
+                    <Label Text="Email: ivan.petrenko@gmail.com" FontSize="16" TextColor="#444" />
+                    <Label Text="Роль: Користувач" FontSize="16" TextColor="#444" />
+                    <Label Text="Дата реєстарції: 14.04.2025" FontSize="16" TextColor="#444" />
+                    <Label Text="Статус: активний" FontSize="16" TextColor="Green" />
+                    <Label Text="Попереджень: 0" FontSize="16" TextColor="Red" />
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Кнопки дій -->
+            <VerticalStackLayout Spacing="15">
+
+                <Button 
+                    Text="Надіслати повідомлення"
+                    BackgroundColor="#007aff"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Clicked="OnSendMessageClicked" />
+
+                <Button 
+                    Text="Заблокувати / Розблокувати"
+                    BackgroundColor="#ff9500"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Clicked="OnToggleBlockClicked" />
+
+                <Button 
+                    Text="Видалити користувача"
+                    BackgroundColor="#ff3b30"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Clicked="OnDeleteUserClicked" />
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

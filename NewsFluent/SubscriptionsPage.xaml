@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewsFluent.SubscriptionsPage"
+             Title="Підписки на новини">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <Label 
+                Text="Оберіть новинні агрегатори для підписки:"
+                FontSize="20"
+                HorizontalOptions="Center" />
+
+            <Grid ColumnDefinitions="*,*" 
+                RowDefinitions="Auto,Auto,Auto,Auto,Auto"
+                RowSpacing="20" 
+                ColumnSpacing="20">
+                
+                <!-- Перший агрегатор -->
+                <Frame Grid.Row="0" Grid.Column="0" BorderColor="LightGray" CornerRadius="10" Padding="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Image Source="bbc.jpg" HeightRequest="40" HorizontalOptions="Center" />
+                        <Label Text="BBC News" FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Label Text="Британський громадський мовник." FontSize="12" HorizontalTextAlignment="Center" />
+                        <Switch x:Name="SwitchBBC" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Другий агрегатор -->
+                <Frame Grid.Row="0" Grid.Column="1" BorderColor="LightGray" CornerRadius="10" Padding="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Image Source="cnn.jpg" HeightRequest="40" HorizontalOptions="Center" />
+                        <Label Text="CNN" FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Label Text="Американський телеканал." FontSize="12" HorizontalTextAlignment="Center" />
+                        <Switch x:Name="SwitchCNN" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="1" Grid.Column="0" BorderColor="LightGray" CornerRadius="10" Padding="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Image Source="reuters.png" HeightRequest="40" HorizontalOptions="Center" />
+                        <Label Text="Reuters" FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Label Text="Агенція фінансових новин." FontSize="12" HorizontalTextAlignment="Center" />
+                        <Switch x:Name="SwitchReuters" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="1" Grid.Column="1" BorderColor="LightGray" CornerRadius="10" Padding="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Image Source="aljazeera.jpg" HeightRequest="40" HorizontalOptions="Center" />
+                        <Label Text="Al Jazeera" FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Label Text="Катарський мовник." FontSize="12" HorizontalTextAlignment="Center" />
+                        <Switch x:Name="SwitchAlJazeera" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="2" Grid.Column="0" BorderColor="LightGray" CornerRadius="10" Padding="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Image Source="guardian.png" HeightRequest="40" HorizontalOptions="Center" />
+                        <Label Text="The Guardian" FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Label Text="Британське видання." FontSize="12" HorizontalTextAlignment="Center" />
+                        <Switch x:Name="SwitchGuardian" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="2" Grid.Column="1" BorderColor="LightGray" CornerRadius="10" Padding="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Image Source="npr.png" HeightRequest="40" HorizontalOptions="Center" />
+                        <Label Text="NPR" FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Label Text="Національне радіо США." FontSize="12" HorizontalTextAlignment="Center" />
+                        <Switch x:Name="SwitchNPR" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="3" Grid.Column="0" BorderColor="LightGray" CornerRadius="10" Padding="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Image Source="bloomberg.png" HeightRequest="40" HorizontalOptions="Center" />
+                        <Label Text="Bloomberg" FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Label Text="Бізнес та економіка." FontSize="12" HorizontalTextAlignment="Center" />
+                        <Switch x:Name="SwitchBloomberg" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="3" Grid.Column="1" BorderColor="LightGray" CornerRadius="10" Padding="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Image Source="yahoo.png" HeightRequest="40" HorizontalOptions="Center" />
+                        <Label Text="Yahoo News" FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Label Text="Агрегатор новин." FontSize="12" HorizontalTextAlignment="Center" />
+                        <Switch x:Name="SwitchYahoo" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="4" Grid.Column="0" BorderColor="LightGray" CornerRadius="10" Padding="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Image Source="skynews.jpg" HeightRequest="40" HorizontalOptions="Center" />
+                        <Label Text="Sky News" FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Label Text="Британський канал." FontSize="12" HorizontalTextAlignment="Center" />
+                        <Switch x:Name="SwitchSky" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="4" Grid.Column="1" BorderColor="LightGray" CornerRadius="10" Padding="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Image Source="ukrpravda.png" HeightRequest="40" HorizontalOptions="Center" />
+                        <Label Text="Укр. правда" FontAttributes="Bold" HorizontalOptions="Center" />
+                        <Label Text="Незалежне українське ЗМІ." FontSize="12" HorizontalTextAlignment="Center" />
+                        <Switch x:Name="SwitchUkrPravda" HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
